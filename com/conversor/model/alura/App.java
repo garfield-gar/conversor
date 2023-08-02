@@ -1,6 +1,8 @@
 package br.com.conversor.model.alura;
 import javax.swing.JOptionPane;
 
+import br.com.conversor.model.alura.Moeda;
+
 public  class  App  {
 
 	public static void main(String[] args)  {
@@ -30,29 +32,29 @@ public  class  App  {
 			case 0:
 				resp =JOptionPane.showInputDialog(null,"Digite um valor:");
 				resp.trim();
-				moeda.Converter(resp);	
+				moeda.conver(resp);
 
 
 				break;
 			case 1:
 				resp = JOptionPane.showInputDialog(null,"Digite um valor:");
 				resp.trim();
-				moeda.setValor(resp);
+				moeda.conver(resp);
 				break;
 			case 2:
 				resp = JOptionPane.showInputDialog(null,"Digite um valor:");
 				resp.trim();
-				moeda.setValor(resp);
+				moeda.conver(resp);
 				break;
 			case 3:
 				resp = JOptionPane.showInputDialog(null,"Digite um valor:");
 				resp.trim();
-				moeda.setValor(resp);
+				moeda.conver(resp);
 				break;
 			case 4:
 				resp = JOptionPane.showInputDialog(null,"Digite um valor:");
 				resp.trim();
-				moeda.setValor(resp);
+				moeda.conver(resp);
 				break;
 
 
