@@ -21,7 +21,7 @@ public class App {
             int resposta = JOptionPane.showOptionDialog(null,
                     " ", "Conversor de Moedas", JOptionPane.DEFAULT_OPTION,
                     JOptionPane.INFORMATION_MESSAGE, null, new String[] {
-                            "Dolares", "Euro", "LIBRAS ESTARLINAS", "peso Argentino", "peso Chileno"
+                            "Dolares", "Euro", "LIBRAS ESTERLINAS", "peso Argentino", "peso Chileno"
                     }, "default");
 
             // tratamento da resposta do botão clicado
@@ -30,26 +30,14 @@ public class App {
             moeda.setValor(Double.parseDouble(resp));
 
             // Perform the conversion based on the selected currency
-            String[] currencies = { "dolares", "euro", "libras esterlinas", "peso argentino", "peso chileno" };
-            String tipoConversao = "de reais a " + currencies[resposta];
+            String[] currencies = { "Dolares", "Euro", "LIBRAS ESTERLINAS", "peso Argentino", "peso Chileno"};
+            String tipoConversao = "de reais para " + currencies[resposta];
             double convertedValue = moeda.converter(tipoConversao);
             JOptionPane.showMessageDialog(null,
                     "O valor convertido é: " + String.format("%.2f",convertedValue),
                     "Message",
                     JOptionPane.INFORMATION_MESSAGE);
 
-        } else {
-            int resposta = JOptionPane.showOptionDialog(null,
-                    " ", "Conversor de Moedas", JOptionPane.DEFAULT_OPTION,
-                    JOptionPane.INFORMATION_MESSAGE, null, new String[] {
-                            "Celsius", "Fahrenheit", "Kelvin"
-                    }, "default");
-
-            // tratamento da resposta do botão clicado
-            resp = JOptionPane.showInputDialog(null, "Digite um valor em Celsius:");
-            resp = resp.trim();
-
-            // Perform the temperature conversion (implement this part as needed)
         }
     }
 }
